@@ -8,4 +8,4 @@ jobs:
       - name: Hello world using echo
         run: echo "$(<hello.txt)"
       - name: Hello world using cat
-        run: echo cat hello.txt
+        run: cat hello.txt
