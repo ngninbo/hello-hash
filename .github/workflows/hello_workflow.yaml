@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Hello world using echo
-        run: echo "$(<hello.txt)"
-      - name: Hello world using cat
-        run: cat hello.txt
+        with:
+          repository: abystoma/test
+          ref: main
+      - name: Show me the answer
+        run: cat answer.txt
